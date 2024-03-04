@@ -3,6 +3,11 @@ Simple Pomodoro Timer CLI made with GO
 
 ![My Image](screenshot.png)
 
+### Features
+- CLI interface
+- Customizable work/break intervals
+- Plays system error sound to mark end of intervals
+
 ### Quick Start
 Use `go run main.go` to start the file
 
