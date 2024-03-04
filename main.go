@@ -110,16 +110,17 @@ func startPomo(stats *Stats) {
 			time.Sleep(1 * time.Minute)
 			work--
 		}
+		fmt.Print("\a")
 
 		for breaks > 0 {
 			fmt.Println(breaks, "minutes of break")
 			time.Sleep(1 * time.Minute)
 			breaks--
 		}
+		fmt.Print("\a")
 
 		stats.totalPomos++
 		stats.totalBreaks++
-		fmt.Print("\a")
 
 		startPomo(stats)
 	case 2:
